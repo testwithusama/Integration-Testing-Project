@@ -25,6 +25,14 @@ describe("auth middleware", () => {
     
     expect(res.status).toBe(401);
   });
+
+  test("Return 400 if token is invalid", async () => {
+    token = 'a';
+
+    const res = await exec();
+    
+    expect(res.status).toBe(400);
+  });
 });
 
 // const request = require("supertest");
