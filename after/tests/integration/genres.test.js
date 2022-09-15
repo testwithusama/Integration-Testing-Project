@@ -83,9 +83,9 @@ describe("/api/genres", () => {
       const res = await request(server)
         .post("/api/genres")
         .set("x-auth-token", token)
-        .send({ name: 'Genre1' });
+        .send({ name: "Genre1" });
 
-      const genre = await Genre.find({ name: 'Genre1' });
+      const genre = await Genre.find({ name: "Genre1" });
       expect(genre).not.toBeNull();
     });
 
@@ -95,10 +95,10 @@ describe("/api/genres", () => {
       const res = await request(server)
         .post("/api/genres")
         .set("x-auth-token", token)
-        .send({ name: 'Genre1' });
+        .send({ name: "Genre1" });
 
-      expect(res.body).toHaveProperty('_id');
-      expect(res.body).toHaveProperty('name', 'Genre1');
+      expect(res.body).toHaveProperty("_id");
+      expect(res.body).toHaveProperty("name", "Genre1");
     });
   });
 });
