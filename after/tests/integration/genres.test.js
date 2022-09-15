@@ -58,7 +58,7 @@ describe("/api/genres", () => {
 
       const res = await request(server)
         .post("/api/genres")
-        .set('x-auth-token', token)
+        .set("x-auth-token", token)
         .send({ name: "1234" });
 
       expect(res.status).toBe(400);
@@ -67,14 +67,26 @@ describe("/api/genres", () => {
     test("Return 400 Error if genre is more than 50 characters", async () => {
       const token = new User().generateAuthToken();
 
-      const name = new Array(52).join('a');
+      const name = new Array(52).join("a");
 
       const res = await request(server)
         .post("/api/genres")
-        .set('x-auth-token', token)
+        .set("x-auth-token", token)
         .send({ name: name });
 
       expect(res.status).toBe(400);
+    });
+
+    test("Save the genre if it is valid", async () => {
+      const token = new User().generateAuthToken();
+
+      const res = await request(server)
+        .post("/api/genres")
+        .set("x-auth-token", token)
+        .send({ name: 'Genre1' });
+
+      const genre = await Genre.find({ name: 'Genre1' });
+      expect(genre).not.toBeNull();
     });
   });
 });
