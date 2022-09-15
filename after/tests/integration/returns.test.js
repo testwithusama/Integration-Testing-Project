@@ -32,7 +32,7 @@ describe("/api/returns", () => {
     await Rental.remove({});
   });
 
-  test('Should Work!', async () => {
+  test("Should Work!", async () => {
     const result = await Rental.findById(rental._id);
 
     expect(result).not.toBeNull();
