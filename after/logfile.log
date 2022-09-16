@@ -938,3 +938,35 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:13:34.010Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:13:35.416Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:13:35.492Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:32:57.132Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:32:57.491Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:32:58.837Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:32:58.885Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:33:00.262Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:33:00.337Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:35:54.652Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:35:54.747Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:35:56.950Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:35:57.000Z"}
+{"message":"Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\Sasuke\\Desktop\\IntegrationTesting\\Integration-Testing-Project\\after\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:198:23)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)","level":"error","timestamp":"2022-09-16T09:36:37.309Z"}
+{"message":"Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\Sasuke\\Desktop\\IntegrationTesting\\Integration-Testing-Project\\after\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:198:23)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)","level":"error","timestamp":"2022-09-16T09:36:48.904Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:36:48.893Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:36:48.998Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:37:44.322Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:37:44.384Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:37:45.819Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:37:45.940Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:37:47.211Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:37:47.293Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:46:28.704Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:46:28.770Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:46:30.424Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:46:30.546Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:46:32.937Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:46:33.030Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:48:30.710Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:48:30.776Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:48:32.318Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:48:32.361Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-16T09:48:33.729Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-16T09:48:33.815Z"}
