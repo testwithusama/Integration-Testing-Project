@@ -55,8 +55,19 @@ describe("/api/returns", () => {
 
     const res = await request(server)
       .post("/api/returns")
-      .set('x-auth-token', token)
+      .set("x-auth-token", token)
       .send({ movieId });
+
+    expect(res.status).toBe(400);
+  });
+
+  test("Return 400 if the movieId is not provided", async () => {
+    const token = new User().generateAuthToken();
+
+    const res = await request(server)
+      .post("/api/returns")
+      .set("x-auth-token", token)
+      .send({ customerId });
 
     expect(res.status).toBe(400);
   });
