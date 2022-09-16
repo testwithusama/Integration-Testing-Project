@@ -11,9 +11,9 @@ describe("/api/returns", () => {
 
   const exec = () => {
     return request(server)
-    .post('/api/returns')
-    .set('x-auth-token', token)
-    .send({ customerId, movieId });
+      .post("/api/returns")
+      .set("x-auth-token", token)
+      .send({ customerId, movieId });
   };
 
   beforeEach(async () => {
@@ -51,7 +51,7 @@ describe("/api/returns", () => {
   });
 
   test("Return 401 if the client is logged in", async () => {
-    token = '';
+    token = "";
 
     const res = await exec();
 
@@ -59,7 +59,7 @@ describe("/api/returns", () => {
   });
 
   test("Return 400 if the customerId is not provided", async () => {
-    customerId = '';
+    customerId = "";
 
     const res = await exec();
 
@@ -67,7 +67,7 @@ describe("/api/returns", () => {
   });
 
   test("Return 400 if the movieId is not provided", async () => {
-    movieId = '';
+    movieId = "";
 
     const res = await exec();
 
@@ -89,5 +89,11 @@ describe("/api/returns", () => {
     const res = await exec();
 
     expect(res.status).toBe(400);
+  });
+
+  test("Return 200 if we have a valid request", async () => {
+    const res = await exec();
+
+    expect(res.status).toBe(200);
   });
 });
