@@ -1,6 +1,6 @@
 const { Rental } = require("../../models/rental");
 const mongoose = require("mongoose");
-const { request } = require("supertest");
+const request = require("supertest");
 
 describe("/api/returns", () => {
   let server;
