@@ -1,22 +1,26 @@
 const express = require("express");
+const auth = require('../middleware/auth');
 const router = express.Router();
-const { Rental } = require('../models/rental');
+const { Rental } = require("../models/rental");
 
-router.post("/", async (req, res) => {
-  if (!req.body.customerId) return res.status(400).send("Customer Id not provided");
+router.post("/", auth, async (req, res) => {
+  if (!req.body.customerId)
+    return res.status(400).send("Customer Id not provided");
 
-  if (!req.body.movieId) return res.status(400).send("Movie Id is not provided");
+  if (!req.body.movieId)
+    return res.status(400).send("Movie Id is not provided");
 
   const rental = await Rental.findOne({
-    'customer._id': req.body.customerId,
-    'movie._id': req.body.movieId,
+    "customer._id": req.body.customerId,
+    "movie._id": req.body.movieId,
   });
 
-  if (!rental) return res.status(404).send("Rental not found.")
+  if (!rental) return res.status(404).send("Rental not found.");
 
-  if (rental.dateReturned) return res.status(400).send('Return already processed.')
+  if (rental.dateReturned)
+    return res.status(400).send("Return already processed.");
 
-  res.status(401).send("Unauthorized");
+  return res.status(200).send();
 });
 
 module.exports = router;
