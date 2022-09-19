@@ -1138,3 +1138,29 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T09:47:16.604Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T09:47:17.858Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T09:47:17.930Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T10:56:51.016Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T10:56:51.093Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T10:56:53.038Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T10:56:53.083Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T10:56:54.509Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T10:56:54.599Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:20:40.560Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:20:40.623Z"}
+{"message":"Cast to ObjectId failed for value \"\" (type string) at path \"_id\" for model \"Rental\"","stack":"CastError: Cast to ObjectId failed for value \"\" (type string) at path \"_id\" for model \"Rental\"\n    at model.Query.exec (C:\\Users\\Sasuke\\Desktop\\IntegrationTesting\\Integration-Testing-Project\\after\\node_modules\\mongoose\\lib\\query.js:4498:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Sasuke\\Desktop\\IntegrationTesting\\Integration-Testing-Project\\after\\node_modules\\mongoose\\lib\\query.js:4592:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"\"","kind":"ObjectId","value":"","path":"_id","reason":{},"valueType":"string","level":"error","timestamp":"2022-09-19T11:20:40.836Z"}
+{"message":"Cast to ObjectId failed for value \"\" (type string) at path \"_id\" for model \"Rental\"","stack":"CastError: Cast to ObjectId failed for value \"\" (type string) at path \"_id\" for model \"Rental\"\n    at model.Query.exec (C:\\Users\\Sasuke\\Desktop\\IntegrationTesting\\Integration-Testing-Project\\after\\node_modules\\mongoose\\lib\\query.js:4498:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Sasuke\\Desktop\\IntegrationTesting\\Integration-Testing-Project\\after\\node_modules\\mongoose\\lib\\query.js:4592:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"\"","kind":"ObjectId","value":"","path":"_id","reason":{},"valueType":"string","level":"error","timestamp":"2022-09-19T11:20:40.901Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:20:42.555Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:20:42.591Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:20:43.896Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:20:43.971Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:26:02.055Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:26:02.116Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:26:04.032Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:26:04.072Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:26:05.444Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:26:05.524Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:30:20.221Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:30:20.285Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:30:22.160Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:30:22.207Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2022-09-19T11:30:23.540Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly_tests...","timestamp":"2022-09-19T11:30:23.627Z"}
