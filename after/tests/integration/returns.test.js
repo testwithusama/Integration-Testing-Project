@@ -28,12 +28,13 @@ describe("/api/returns", () => {
 
     movie = new Movie({
       _id: movieId,
-      title: 'Taare Zameen Par',
+      title: "Taare Zameen Par",
       dailyRentalRate: 2,
-      genre: { name: 'Shaikh Usama Bin Naeem' },
-      numberInStock: 10
-    }); 
-    await movie.save(); 
+      genre: { name: "Taare Zameen Par" },
+      numberInStock: 10,
+    });
+
+    await movie.save();
 
     rental = new Rental({
       customer: {
@@ -54,6 +55,7 @@ describe("/api/returns", () => {
   afterEach(async () => {
     await server.close();
     await Rental.remove({});
+    await Movie.remove({});
   });
 
   test("Should Work!", async () => {
@@ -113,28 +115,39 @@ describe("/api/returns", () => {
     const res = await exec();
 
     const rentalInDb = await Rental.findById(rental._id);
-
     const diff = new Date() - rentalInDb.dateReturned;
-
     expect(diff).toBeLessThan(10 * 1000);
   });
 
-  test("Should set the rentalFare if the input is valid", async () => {
+  test("Should set the rentalFee if the input is valid", async () => {
     rental.dateOut = moment().add(-7, "days").toDate();
     await rental.save();
 
     const res = await exec();
 
     const rentalInDb = await Rental.findById(rental._id);
-
     expect(rentalInDb.rentalFee).toBe(14);
   });
 
-  test("Increase the movie stock if input is valid", async () => {
+  test("Should increase the movie stock if the input is valid", async () => {
+
     const res = await exec();
 
     const movieInDb = await Movie.findById(movieId);
-    
     expect(movieInDb.numberInStock).toBe(movie.numberInStock + 1);
+  });
+
+  test("Return the rental if input is valid", async () => {
+    const res = await exec();
+
+    const rentalInDb = await Rental.findById(rental._id);
+    // expect(res.body).toHaveProperty('dateOut');
+    // expect(res.body).toHaveProperty('dateReturned');
+    // expect(res.body).toHaveProperty('rentalFee');
+    // expect(res.body).toHaveProperty('customer');
+    // expect(res.body).toHaveProperty('movie');
+
+    expect(Object.keys(res.body)).toEqual(
+      expect.arrayContaining(['dateOut', 'dateReturned', 'rentalFee', 'customer', 'movie']));
   });
 });
